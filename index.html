@@ -10,13 +10,19 @@
        padding: 0;
       }
       
+      img {
+         margin: 10px; 
+         height: 90px;
+         width: 150px;
+      }
+      
     .container {
         margin: 0;
         height: calc(100vh - 20px);
         width: calc(100vw - 20px);
         border: 10px solid red;
         display: flex;
-        align-items: column;
+        align-content: center;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -26,6 +32,10 @@
             flex-direction: row;
             justify-content: center;
         }
+    
+    .lastimg {
+        align-self: center;
+    }
   </style>
 </head>
 
@@ -39,8 +49,7 @@
             <img src = "https://source.unsplash.com/random/150x150">
             <img src = "https://source.unsplash.com/random/150x150">
             <img src = "https://source.unsplash.com/random/150x150">
-            <img src = "https://source.unsplash.com/random/150x150">
-            <img src = "https://source.unsplash.com/random/150x150">
+            <img src = "https://source.unsplash.com/random/150x150" class = "lastimg">
         </div>
     </div>
 </body>
